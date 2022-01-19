@@ -55,7 +55,7 @@
             // mnuMap
             // 
             this.mnuMap.Name = "mnuMap";
-            this.mnuMap.Size = new System.Drawing.Size(180, 22);
+            this.mnuMap.Size = new System.Drawing.Size(98, 22);
             this.mnuMap.Text = "Map";
             this.mnuMap.Click += new System.EventHandler(this.mnuMap_Click);
             // 
@@ -69,6 +69,7 @@
             this.MainMenuStrip = this.mnu;
             this.Name = "FrmMDI";
             this.Text = "Route Builder";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.mnu.ResumeLayout(false);
             this.mnu.PerformLayout();
             this.ResumeLayout(false);

@@ -12,6 +12,8 @@ namespace RouteBuilder
 {
 	public partial class FrmMDI : Form
 	{
+		private GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
+
 		public FrmMDI()
 		{
 			InitializeComponent();
@@ -20,7 +22,7 @@ namespace RouteBuilder
 		private void mnuMap_Click(object sender, EventArgs e)
 		{
 			FrmMap f = new FrmMap();
-			f.Parent = this;
+			f.MdiParent = this;
 			f.Show();
 		}
 	}
